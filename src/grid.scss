@@ -1,0 +1,73 @@
+.ElementComponent{
+    border: 1px solid red;
+    color: #ffffff;
+    text-align: start;
+    padding: 4px 8px 4px 6.5px;
+    background: #0f0f0f;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    font-size: 70%;
+
+    h1{
+      margin: 2px;
+    }
+    h4{
+      text-align: right;
+    }
+    h5{
+      margin: 2px;
+    }
+    
+  }
+  
+  .ElementComponent:hover {
+    transform: scale(1.3);
+  }
+  
+  
+  
+  .grid-container-1{
+    width: 80vw;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    margin: -6rem auto 0 auto;
+    
+    .ElementComponent:nth-child(2){
+      grid-column: 18 / 19;
+    }
+    
+    .ElementComponent:nth-child(10), .ElementComponent:nth-child(18){
+      grid-column: 18 / 19;
+    }
+    
+    .ElementComponent:nth-child(9), .ElementComponent:nth-child(17){
+      grid-column: 17 / 18;
+    }
+    
+    .ElementComponent:nth-child(8), .ElementComponent:nth-child(16){
+      grid-column: 16 / 17;
+    }
+    
+    .ElementComponent:nth-child(7), .ElementComponent:nth-child(15){
+      grid-column: 15 / 16;
+    }
+    
+    .ElementComponent:nth-child(6), .ElementComponent:nth-child(14){
+      grid-column: 14 / 15;
+    }
+    
+    .ElementComponent:nth-child(5), .ElementComponent:nth-child(13){
+      grid-column: 13 / 14;
+    }
+  }
+  
+  .grid-container-2{
+    width: 58.3vw;
+    height: 17vh;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 5rem 18.8rem 0 auto;
+  }
