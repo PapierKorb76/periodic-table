@@ -2,7 +2,7 @@ import ElementComponent from "./ElementComponent";
 import { useState } from "react";
 import gridStyling from "./grid.scss";
 
-export default function PeriodicTable() {
+export default function PeriodicTable({periodicTable}) {
   return (
     <div className="PeriodicTable" style={{ gridStyling }}>
       <div className="grid-container-1">
